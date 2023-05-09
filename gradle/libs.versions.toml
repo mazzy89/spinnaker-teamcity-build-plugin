@@ -1,0 +1,7 @@
+[versions]
+spinnakerBundler = "8.26.0"
+palantirGit = "3.0.0"
+
+[plugins]
+spinnaker-bundler = { id = "io.spinnaker.plugin.bundler", version.ref = "spinnakerBundler"}
+palantir-git = { id = "com.palantir.git-version", version.ref = "palantirGit"}
