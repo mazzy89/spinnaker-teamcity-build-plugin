@@ -26,8 +26,10 @@ spinnakerPlugin {
 }
 
 dependencies {
-  implementation(libs.kotlin.gradle.plugin)
-  implementation(libs.kotlin.all.open)
+  annotationProcessor(libs.spring.boot.configuration.processor)
+
+  compileOnly(libs.kotlin.gradle.plugin)
+  compileOnly(libs.kotlin.all.open)
 
   compileOnly(libs.kork.api)
   compileOnly(libs.kork.plugins.spring.api)

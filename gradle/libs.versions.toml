@@ -4,6 +4,7 @@ spinnakerPluginServiceExtension = "8.26.0"
 palantirGit = "3.0.0"
 kotlinVersion = "1.8.21"
 korkVersion = "7.173.0"
+sprintBootConfigurationProcessor = "3.0.6"
 
 [libraries]
 kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlinVersion" }
@@ -12,6 +13,8 @@ kotlin-all-open = { module = "org.jetbrains.kotlin:kotlin-allopen", version.ref 
 kork-api = { group = "io.spinnaker.kork", name = "kork-api", version.ref = "korkVersion"}
 kork-plugins = { group = "io.spinnaker.kork", name = "kork-plugins", version.ref = "korkVersion"}
 kork-plugins-spring-api = { group = "io.spinnaker.kork", name = "kork-plugins-spring-api", version.ref = "korkVersion"}
+
+spring-boot-configuration-processor = { module = "org.springframework.boot:spring-boot-configuration-processor", version.ref = "sprintBootConfigurationProcessor" }
 
 [plugins]
 spinnaker-plugin-bundler = { id = "io.spinnaker.plugin.bundler", version.ref = "spinnakerPluginBundler"}
