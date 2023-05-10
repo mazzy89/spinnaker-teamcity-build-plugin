@@ -1,7 +1,19 @@
 [versions]
-spinnakerBundler = "8.26.0"
+spinnakerPluginBundler = "8.26.0"
+spinnakerPluginServiceExtension = "8.26.0"
 palantirGit = "3.0.0"
+kotlinVersion = "1.8.21"
+
+[libraries]
+kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlinVersion" }
+kotlin-all-open = { module = "org.jetbrains.kotlin:kotlin-allopen", version.ref = "kotlinVersion" }
 
 [plugins]
-spinnaker-bundler = { id = "io.spinnaker.plugin.bundler", version.ref = "spinnakerBundler"}
+spinnaker-plugin-bundler = { id = "io.spinnaker.plugin.bundler", version.ref = "spinnakerPluginBundler"}
+spinnaker-plugin-serviceextension = { id = "io.spinnaker.plugin.service-extension", version.ref = "spinnakerPluginServiceExtension" }
+
 palantir-git = { id = "com.palantir.git-version", version.ref = "palantirGit"}
+
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlinVersion" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlinVersion" }
+kotlin-plugin-spring = { id = "org.jetbrains.kotlin.plugin.spring", version.ref = "kotlinVersion" }
