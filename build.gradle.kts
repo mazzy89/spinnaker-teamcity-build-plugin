@@ -2,6 +2,12 @@
 plugins {
   alias(libs.plugins.spinnaker.plugin.bundler)
   alias(libs.plugins.palantir.git)
+
+  alias(libs.plugins.kotlin.jvm) apply false
+  alias(libs.plugins.kotlin.kapt) apply false
+  alias(libs.plugins.kotlin.plugin.spring) apply false
+
+  alias(libs.plugins.spinnaker.plugin.serviceextension) apply false
 }
 
 spinnakerBundle {
