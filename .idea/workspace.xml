@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40f71909-3d2c-4166-8aa9-5bf5253f89f5" name="Changes" comment="first class">
-      <change afterPath="$PROJECT_DIR$/teamcity-build-igor/src/main/kotlin/cloud/double/spinnaker/plugin/teamcity/build/properties/TeamCityBuildProperties.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teamcity-build-igor/src/main/kotlin/cloud/double/spinnaker/plugin/teamcity/build/services/TeamCityCiBuildService.kt" afterDir="false" />
+    <list default="true" id="40f71909-3d2c-4166-8aa9-5bf5253f89f5" name="Changes" comment="build service">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradle/libs.versions.toml" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/libs.versions.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/teamcity-build-igor/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/teamcity-build-igor/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teamcity-build-igor/src/main/kotlin/cloud/double/spinnaker/plugin/teamcity/build/properties/TeamCityBuildProperties.kt" beforeDir="false" afterPath="$PROJECT_DIR$/teamcity-build-igor/src/main/kotlin/cloud/double/spinnaker/plugin/teamcity/build/properties/TeamCityBuildProperties.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teamcity-build-igor/src/main/kotlin/cloud/double/spinnaker/plugin/teamcity/build/services/TeamCityCiBuildService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/teamcity-build-igor/src/main/kotlin/cloud/double/spinnaker/plugin/teamcity/build/services/TeamCityCiBuildService.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +164,7 @@
       <workItem from="1682788501874" duration="11442000" />
       <workItem from="1683132415751" duration="927000" />
       <workItem from="1683617521014" duration="1946000" />
-      <workItem from="1683655608360" duration="18540000" />
+      <workItem from="1683655608360" duration="27630000" />
     </task>
     <task id="LOCAL-00001" summary="gradle">
       <created>1683739552009</created>
@@ -178,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683752632010</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="build service">
+      <created>1683753883657</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683753883657</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,7 +196,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="gradle" />
     <MESSAGE value="first class" />
-    <option name="LAST_COMMIT_MESSAGE" value="first class" />
+    <MESSAGE value="build service" />
+    <option name="LAST_COMMIT_MESSAGE" value="build service" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

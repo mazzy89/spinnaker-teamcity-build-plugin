@@ -28,10 +28,17 @@ spinnakerPlugin {
 dependencies {
   annotationProcessor(libs.spring.boot.configuration.processor)
 
+  compileOnly(libs.jackson.module.kotlin)
+
   compileOnly(libs.kotlin.gradle.plugin)
   compileOnly(libs.kotlin.all.open)
 
   compileOnly(libs.kork.api)
   compileOnly(libs.kork.plugins.spring.api)
   compileOnly(libs.kork.plugins)
+
+  compileOnly(libs.igor.web)
+  compileOnly(libs.igor.core)
+
+  implementation(libs.teamcity.rest.client)
 }

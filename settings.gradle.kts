@@ -9,5 +9,9 @@ rootDir.listFiles()?.forEach {
 dependencyResolutionManagement {
   repositories {
     mavenCentral()
+
+    maven {
+      url = uri("https://packages.jetbrains.team/maven/p/teamcity-rest-client/teamcity-rest-client")
+    }
   }
 }

@@ -1,8 +1,6 @@
 package cloud.double.spinnaker.plugin.teamcity.build.properties
 
-import org.springframework.boot.context.properties.ConfigurationProperties
+import com.netflix.spinnaker.kork.plugins.api.PluginConfiguration
 
-@ConfigurationProperties("teamcity.build")
-data class TeamCityBuildProperties(
-  var url: String? = null
-)
+@PluginConfiguration
+data class TeamCityBuildProperties(var url: String)

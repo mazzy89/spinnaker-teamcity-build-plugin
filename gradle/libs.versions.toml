@@ -4,23 +4,33 @@ spinnakerPluginServiceExtension = "8.26.0"
 palantirGit = "3.0.0"
 kotlinVersion = "1.8.21"
 korkVersion = "7.173.0"
+igorVersion = "4.11.1"
 sprintBootConfigurationProcessor = "3.0.6"
+jacksonModuleKotlin = "2.15.0"
+teamcityRestClient = "1.19.0"
 
 [libraries]
 kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlinVersion" }
 kotlin-all-open = { module = "org.jetbrains.kotlin:kotlin-allopen", version.ref = "kotlinVersion" }
 
-kork-api = { group = "io.spinnaker.kork", name = "kork-api", version.ref = "korkVersion"}
-kork-plugins = { group = "io.spinnaker.kork", name = "kork-plugins", version.ref = "korkVersion"}
-kork-plugins-spring-api = { group = "io.spinnaker.kork", name = "kork-plugins-spring-api", version.ref = "korkVersion"}
+jackson-module-kotlin = { group = "com.fasterxml.jackson.module", name = "jackson-module-kotlin", version.ref = "jacksonModuleKotlin" }
+
+kork-api = { group = "io.spinnaker.kork", name = "kork-api", version.ref = "korkVersion" }
+kork-plugins = { group = "io.spinnaker.kork", name = "kork-plugins", version.ref = "korkVersion" }
+kork-plugins-spring-api = { group = "io.spinnaker.kork", name = "kork-plugins-spring-api", version.ref = "korkVersion" }
+
+igor-web = { group = "io.spinnaker.igor", name = "igor-web", version.ref = "igorVersion" }
+igor-core = { group = "io.spinnaker.igor", name = "igor-core", version.ref = "igorVersion" }
 
 spring-boot-configuration-processor = { module = "org.springframework.boot:spring-boot-configuration-processor", version.ref = "sprintBootConfigurationProcessor" }
+teamcity-rest-client = { group = "org.jetbrains.teamcity", name = "teamcity-rest-client", version.ref = "teamcityRestClient" }
+
 
 [plugins]
-spinnaker-plugin-bundler = { id = "io.spinnaker.plugin.bundler", version.ref = "spinnakerPluginBundler"}
+spinnaker-plugin-bundler = { id = "io.spinnaker.plugin.bundler", version.ref = "spinnakerPluginBundler" }
 spinnaker-plugin-serviceextension = { id = "io.spinnaker.plugin.service-extension", version.ref = "spinnakerPluginServiceExtension" }
 
-palantir-git = { id = "com.palantir.git-version", version.ref = "palantirGit"}
+palantir-git = { id = "com.palantir.git-version", version.ref = "palantirGit" }
 
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlinVersion" }
 kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlinVersion" }
